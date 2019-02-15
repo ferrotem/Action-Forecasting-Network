@@ -8,7 +8,7 @@ from dataset_manager import Dataset
 import config
 
 
-class tf_record_writer:
+class tf_records_writer:
     def __init__(self):
 
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = config.TF_CPP_MIN_LOG_LEVEL
@@ -170,4 +170,4 @@ class tf_record_writer:
                 tfwriter.write(example.SerializeToString())
 
 
-tf_record_writer()
+tf_records_writer()
